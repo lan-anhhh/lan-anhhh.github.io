@@ -1,11 +1,11 @@
 :root {
-  --bg: #f6f4ef;
-  --surface: #ffffff;
-  --text: #1e1e1e;
-  --muted: #5a5a5a;
-  --border: #dedbd2;
-  --accent: #2f3a45;
-  --accent-soft: #dfe3e8;
+  --bg: #FAFAF6;
+  --accent: #5D8AA8;
+  --surface: color-mix(in srgb, var(--bg) 86%, var(--accent) 14%);
+  --text: color-mix(in srgb, var(--accent) 88%, var(--bg) 12%);
+  --muted: color-mix(in srgb, var(--accent) 72%, var(--bg) 28%);
+  --border: color-mix(in srgb, var(--accent) 34%, var(--bg) 66%);
+  --accent-soft: color-mix(in srgb, var(--bg) 72%, var(--accent) 28%);
 }
 
 * {
@@ -50,7 +50,7 @@ a:hover {
 .site-header {
   position: sticky;
   top: 0;
-  background: color-mix(in srgb, var(--bg) 86%, white 14%);
+  background: color-mix(in srgb, var(--bg) 90%, var(--accent) 10%);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(8px);
   z-index: 10;
@@ -113,6 +113,24 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.hero-name-row {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.hero-name-row h1 {
+  margin-bottom: 0;
+}
+
+.hero-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
 .subtitle {
   margin-top: 0;
   font-weight: 600;
@@ -147,7 +165,7 @@ h1 {
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--bg);
 }
 
 .btn-secondary {
@@ -251,6 +269,15 @@ h1 {
 
   .section {
     padding: 4rem 0;
+  }
+
+  .hero-name-row {
+    gap: 0.85rem;
+  }
+
+  .hero-avatar {
+    width: 50px;
+    height: 50px;
   }
 }
 
