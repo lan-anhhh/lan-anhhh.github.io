@@ -84,20 +84,6 @@ a:hover {
   font-weight: 500;
 }
 
-.header-profile-row {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 0.8rem;
-}
-
-.header-profile-pic {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--border);
-}
-
 .hero {
   padding-top: 6rem;
   padding-bottom: 4rem;
@@ -125,6 +111,28 @@ h3 {
 h1 {
   font-size: clamp(2rem, 5vw, 3.3rem);
   margin-bottom: 0.5rem;
+}
+
+.hero-name-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-name-row h1 {
+  margin-bottom: 0;
+}
+
+.hero-profile-bg {
+  background: color-mix(in srgb, var(--accent) 18%, var(--bg) 82%);
+  padding: 0.3rem;
+  border: 1px solid var(--border);
+}
+
+.hero-profile-square {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
 }
 
 .subtitle {
@@ -267,9 +275,9 @@ h1 {
     padding: 4rem 0;
   }
 
-  .header-profile-pic {
-    width: 56px;
-    height: 56px;
+  .hero-profile-square {
+    width: 70px;
+    height: 70px;
   }
 }
 
