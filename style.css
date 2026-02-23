@@ -113,32 +113,6 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.hero-name-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.hero-name-row h1 {
-  margin-bottom: 0;
-}
-
-.hero-profile-bg {
-  width: 96px;
-  height: 96px;
-  background-image:
-    linear-gradient(
-      color-mix(in srgb, var(--bg) 58%, transparent 42%),
-      color-mix(in srgb, var(--bg) 58%, transparent 42%)
-    ),
-    url("images/pfp.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 1px solid var(--border);
-  opacity: 0.9;
-}
-
 .subtitle {
   margin-top: 0;
   font-weight: 600;
@@ -277,11 +251,6 @@ h1 {
 
   .section {
     padding: 4rem 0;
-  }
-
-  .hero-profile-bg {
-    width: 78px;
-    height: 78px;
   }
 }
 
