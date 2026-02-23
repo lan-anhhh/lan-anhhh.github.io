@@ -113,6 +113,27 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+/* Profile Header: Image next to name */
+.profile-header {
+  display: flex;           /* side by side */
+  align-items: center;     /* vertically center */
+  gap: 20px;               /* space between picture and name */
+  margin: 40px 0;          /* spacing from other sections */
+}
+
+.profile-pic {
+  width: 120px;            /* adjust as needed */
+  height: 120px;
+  border-radius: 50%;      /* circular */
+  object-fit: cover;       /* keep aspect ratio */
+  border: 2px solid #ccc;  /* optional subtle border */
+}
+
+.profile-header h1 {
+  font-size: 2.2rem;       /* adjust for your design */
+  margin: 0;
+}
+
 .subtitle {
   margin-top: 0;
   font-weight: 600;
